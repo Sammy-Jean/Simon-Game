@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keydown(function() {
+$(document).input(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -15,7 +15,7 @@ $(document).keydown(function() {
   }
 });
 
-$(".btn").keydown(function() {
+$(".btn").input(function() {
 
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
